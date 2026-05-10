@@ -59,22 +59,6 @@ img {
   z-index: 999;
 }
 
-/* SCROLL BUTTON */
-.scroll-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #dc3545;
-  color: #fff;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
-  display: none;
-  cursor: pointer;
-  z-index: 1000;
-}
-
 /* MOBILE */
 @media (max-width: 768px) {
   .footer {
