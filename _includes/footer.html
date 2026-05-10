@@ -94,20 +94,44 @@
     <button id="scrollTopBtn" class="scroll-top" style="display: block; "> ↑ </button>
   </a>
 
-  <!-- Floating Bottom Ad -->
-  <div id="floatingBottomAd"
-    class="position-fixed bottom-0 h-25 start-50 translate-middle-x bg-light shadow border rounded-top overflow-hidden"
-    style="z-index:1080; width:100%; max-width:728px;">
-    <!-- Close Button -->
-    <button type="button" class="small btn-close bg-danger rounded-0 position-absolute top-0 end-0" aria-label="Close"
-      style="z-index:2;" onclick="event.stopPropagation();
-                 setTimeout(function () {
-                   document.getElementById('floatingBottomAd').style.display = 'none';
-                 }, 4000);">
-    </button>
-    <!-- Ad Container -->
-    <div class="text-center overflow-hidden p-1">
-      {% include adfloat.html %}
+  <!-- STICKY AD -->
+  <div id='stickyAdsLepi'>
+    <div class='code-block code-block-16 ai-viewport-1 ai-viewport-2' style='margin: 8px 0; clear: both;'>
+      <div id='d_co'>
+        <div id='d_sp'>
+          <div id='d_x'>X CLOSE</div>
+          <div id='d_ttl'>Advertisements</div>
+          <div id='d_ads'>
+            <!-- Sticky 728x90 -->
+            <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+              data-ad-client="ca-pub-3956807637449855" data-ad-slot="1407196300"></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <div id='stickyAdsMobile'>
+    <div class='code-block' id='code-block'>
+      <div class='code-block code-block-15 ai-viewport-3' style='margin: 8px 0; clear: both;'>
+        <div id='m_co'>
+          <div id='m_x'>X CLOSE</div>
+          <div id='m_ads'>
+            <div id='m_ttl'>Advertisements</div>
+            <div id="t_ads">
+              <!-- Sticky 320x50 -->
+              <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px"
+                data-ad-client="ca-pub-3956807637449855" data-ad-slot="1407196300"></ins>
+              <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </footer>
