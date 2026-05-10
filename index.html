@@ -105,6 +105,10 @@ layout: default
 
   {% endif %}
 
+  <!-- ad -->
+  <div class="ad-box my-3 text-center">
+    {% include adtop.html %}
+  </div>
 
   <!-- MAIN CONTENT -->
   <div class="my-5">
@@ -223,15 +227,15 @@ layout: default
       <!-- RANGE -->
       {% for page in (start..end) %}
       <li class="page-item {% if page == current %}active{% endif %}">
-        
+
         {% if page == 1 %}
-          <a class="page-link" href="{{ '/' | relative_url }}">
-            {{ page }}
-          </a>
+        <a class="page-link" href="{{ '/' | relative_url }}">
+          {{ page }}
+        </a>
         {% else %}
-          <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
-            {{ page }}
-          </a>
+        <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
+          {{ page }}
+        </a>
         {% endif %}
 
       </li>
@@ -239,15 +243,15 @@ layout: default
 
       <!-- LAST -->
       {% if end < total %}
-        {% if end < total | minus: 1 %}
-        <li class="page-item disabled"><span class="page-link">...</span></li>
-        {% endif %}
+      {% if end < total | minus: 1 %}
+      <li class="page-item disabled"><span class="page-link">...</span></li>
+      {% endif %}
 
-        <li class="page-item">
-          <a class="page-link" href="{{ site.paginate_path | replace: ':num', total | relative_url }}">
-            {{ total }}
-          </a>
-        </li>
+      <li class="page-item">
+        <a class="page-link" href="{{ site.paginate_path | replace: ':num', total | relative_url }}">
+          {{ total }}
+        </a>
+      </li>
       {% endif %}
 
       <!-- NEXT -->
