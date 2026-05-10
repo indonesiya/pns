@@ -1,5 +1,5 @@
 # Site settings
-title: INDONESIYA
+title: Indonesiya
 email: indonesiya.com
 description: >
   Berbagi informasi, menginspirasi dan terpopuler
@@ -14,10 +14,10 @@ future: false
 logo: logo.png
 default-image: default.jpg
 
-built-by: INDONESIYA
+built-by: Indonesiya
 
 copyright:
-  name: INDONESIYA
+  name: Indonesiya
   link: "https://indonesiya.com"
 
 markdown: kramdown
