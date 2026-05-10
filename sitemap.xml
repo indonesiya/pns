@@ -1,50 +1,75 @@
----
-layout: null
----
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-{% assign now = site.time | date: "%s" %}
-
-<!-- HOME -->
 <url>
-  <loc>{{ site.url }}/</loc>
-  <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.0</priority>
+<loc>https://asninfoh.github.io/pns/posts/pesona-wanita-pns-indonesia.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
 </url>
-
-<!-- POSTS -->
-{% for post in site.posts %}
-
-  {% assign publish_time = post.publish_at | date: "%s" %}
-
-  {% if post.publish_at == nil or publish_time <= now %}
-
-  <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  {% endif %}
-
-{% endfor %}
-
-<!-- PAGES -->
-{% for page in site.pages %}
-  {% if page.sitemap != false and page.url contains '.html' %}
-
-  <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  {% endif %}
-{% endfor %}
-
+<url>
+<loc>https://asninfoh.github.io/pns/posts/pns-cantik-berseragam.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/gaya-pns-wanita-modern.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/pns-cantik-di-kantor.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/pns-cantik-viral-terbaru.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/kumpulan-pns-cantik-berhijab.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/foto-pns-cantik-indonesia.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/pns-wanita-menarik.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/pegawai-negeri-sipil-cantik.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/pns-cantik-indonesia.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/wanita-pns-cantik.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://asninfoh.github.io/pns/posts/pns-cantik.html</loc>
+<lastmod>2026-05-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
 </urlset>

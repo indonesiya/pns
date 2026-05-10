@@ -1,272 +1,293 @@
----
-layout: default
----
 
-{% assign now = site.time | date: "%s" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'/>
 
-<div class="my-4">
+<title>PNS | PNS</title>
+<meta name="description" content="PNS ideas and inspiration for modern home decor.">
 
-  {% if page.url == "/" or page.url == "/index.html" %}
+<!-- OG META -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="PNS | PNS">
+<meta property="og:description" content="PNS ideas and inspiration for modern interior design.">
+<meta property="og:url" content="https://asninfoh.github.io/pns/posts/pesona-wanita-pns-indonesia.html">
+<meta property="og:image" content="https://tse1.mm.bing.net/th?q=PNS">
 
-  <!-- TOP SECTION -->
-  <div class="row g-4">
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PNS | PNS">
+<meta name="twitter:description" content="PNS ideas and inspiration for modern home decor.">
+<meta name="twitter:image" content="https://tse1.mm.bing.net/th?q=PNS">
 
-    <!-- FEATURED -->
-    <div class="col-lg-7">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://asninfoh.github.io/pns/style.css" rel="stylesheet">
+<script type='text/javascript' src='https://adsterrah.github.io/banner/popunder.js'></script>
+</head>
 
-      <h6 class="fw-bold text-uppercase mb-3">
-        <span class="text-danger">/</span> FEATURED POST <span class="text-danger">/</span>
-      </h6>
+<body>
 
-      {% assign featured_post = nil %}
-      {% for post in site.posts %}
-      {% if post.tags contains "featured" %}
-      {% assign publish_time = post.publish_at | date: "%s" %}
-      {% if post.publish_at == nil or publish_time <= now %}
-      {% assign featured_post = post %}
-      {% break %}
-      {% endif %}
-      {% endif %}
-      {% endfor %}
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg border-bottom bg-light shadow-sm sticky-top">
+<div class="container">
+    <a class="navbar-brand fw-bold text-danger text-uppercase fs-4" href="https://asninfoh.github.io/pns/index.html">PNS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="https://asninfoh.github.io/pns/galeri.html">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://asninfoh.github.io/pns/inspirasi.html">Inspirasi</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://asninfoh.github.io/pns/karir.html">Karir</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://aridjaya.com" target='_blank'>Partner</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://asninfoh.github.io/pns/kontak.html">Kontak</a></li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2" placeholder="Search...">
+        </form>
+    </div>
+</div>
+</nav>
 
-      {% if featured_post %}
-      <div class="card border-0">
-        <a href="{{ featured_post.url | relative_url }}" class="text-decoration-none text-dark">
-          <div class="position-relative">
-            <img
-              src="{% if featured_post.image %}{{ featured_post.image | relative_url }}{% else %}{{ '/assets/images/default.jpg' | relative_url }}{% endif %}"
-              alt="{{ featured_post.title }}" class="img-fluid w-100 rounded featured-img"
-              style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
-          </div>
 
-          <!-- TEXT DI BAWAH -->
-          <div class="mt-3">
+<div class="container mt-4">
 
-            <!-- CATEGORY -->
-            {% if featured_post.categories %}
-            <div class="small text-danger text-capitalize fw-bold mb-1">
-              {{ featured_post.categories | first }}
+<!-- ad1 -->
+<div class="text-center p-3 my-3">
+    <script type='text/javascript' src='https://adsterrah.github.io/banner/ad1.js'></script>
+</div>
+
+<div class="row" id="post-container">
+
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/pesona-wanita-pns-indonesia.html">
+                <img src="https://tse1.mm.bing.net/th?q=Pesona Wanita Pns Indonesia&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/pesona-wanita-pns-indonesia.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Pesona Wanita Pns Indonesia</h6>
+                </a>
             </div>
-            {% endif %}
-
-            <!-- TITLE -->
-            <h2 class="fw-bold text-dark link-danger mb-2">
-              {{ featured_post.title }}
-            </h2>
-
-          </div>
-        </a>
-
-      </div>
-      {% endif %}
-
-    </div>
-
-    <!-- POPULAR -->
-    <div class="col-lg-5">
-
-      <h6 class="fw-bold text-uppercase mb-3">
-        <span class="text-danger">/</span> POPULER <span class="text-danger">/</span>
-      </h6>
-
-      {% for post in site.posts limit:5 %}
-      <div class="d-flex mb-3 gap-3 align-items-start">
-
-        <img
-          src="{% if post.image %}{{ post.image | relative_url }}{% else %}{{ '/assets/images/default.jpg' | relative_url }}{% endif %}"
-          class="card-img rounded" style="width: 120px; height:75px; aspect-ratio: 16/9; object-fit: cover;"
-          loading="lazy" alt="{{ post.title }}">
-
-        <div class="flex-grow-1">
-
-          <!-- CATEGORY -->
-          <div class="small text-danger text-capitalize fw-bold">
-            {{ post.categories | first }}
-          </div>
-
-          <!-- TITLE -->
-          <a href="{{ post.url | relative_url }}"
-            class="text-dark link-danger text-capitalize text-decoration-none fw-bold d-block">
-            {{ post.title | truncate: 60 }}
-          </a>
-
         </div>
-
-      </div>
-      {% endfor %}
-
     </div>
-
-  </div>
-
-  {% endif %}
-
-  <!-- ad -->
-  <div class="ad-box my-3 text-center">
-    {% include adtop.html %}
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="my-5">
-
-    <h6 class="fw-bold text-uppercase mb-3">
-      <span class="text-danger">/</span> ARTIKEL <span class="text-danger">/</span>
-    </h6>
-
-    {% assign now = site.time | date: "%s" %}
-
-    <div class="row g-4">
-
-      {% assign has_post = false %}
-
-      {% for post in paginator.posts %}
-      {% assign publish_time = post.publish_at | date: "%s" %}
-
-      {% if post.publish_at == nil or publish_time <= now %}
-      {% assign has_post = true %}
-
-      <div class="col-12 col-md-4 my-4">
-        <div class="card border-0 h-100">
-
-          <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
-
-            <img
-              src="{% if post.image %}{{ post.image | relative_url }}{% else %}{{ '/assets/images/default.jpg' | relative_url }}{% endif %}"
-              class="card-img w-100 rounded" style="aspect-ratio: 16/9; object-fit: cover;" loading="lazy"
-              alt="{{ post.title }}">
-
-
-            <div class="mt-3">
-
-              <!-- CATEGORY -->
-              {% if post.categories %}
-              <div class="small text-capitalize text-danger fw-bold mb-1">
-                {{ post.categories[0] }}
-              </div>
-              {% endif %}
-
-              <!-- TITLE -->
-              <h4 class="text-capitalize text-dark link-danger fw-bold  mb-1">
-                {{ post.title }}
-              </h4>
-
-              <!-- DATE -->
-              <span class="small text-muted d-block mb-1">
-                {{ post.date | date: "%b %-d, %Y" }}
-              </span>
-
-              {% if page.author %}
-              <span class="small text-capitalize text-muted" itemprop="author">
-                • {{ page.author }}
-              </span>
-              {% endif %}
-
-              <!-- EXCERPT -->
-              <p class="small text-muted mb-0">
-                {{ post.excerpt | strip_html | truncate: 100 }}
-              </p>
-
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/pns-cantik-berseragam.html">
+                <img src="https://tse1.mm.bing.net/th?q=Pns Cantik Berseragam&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/pns-cantik-berseragam.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Pns Cantik Berseragam</h6>
+                </a>
             </div>
-
-          </a>
-
         </div>
-      </div>
-
-      {% endif %}
-      {% endfor %}
-
-      {% unless has_post %}
-      <div class="col-12">
-        <div class="text-center text-muted py-5">
-          No posts available yet.
-        </div>
-      </div>
-      {% endunless %}
-
     </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/gaya-pns-wanita-modern.html">
+                <img src="https://tse1.mm.bing.net/th?q=Gaya Pns Wanita Modern&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/gaya-pns-wanita-modern.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Gaya Pns Wanita Modern</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/pns-cantik-di-kantor.html">
+                <img src="https://tse1.mm.bing.net/th?q=Pns Cantik Di Kantor&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/pns-cantik-di-kantor.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Pns Cantik Di Kantor</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/pns-cantik-viral-terbaru.html">
+                <img src="https://tse1.mm.bing.net/th?q=Pns Cantik Viral Terbaru&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/pns-cantik-viral-terbaru.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Pns Cantik Viral Terbaru</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/kumpulan-pns-cantik-berhijab.html">
+                <img src="https://tse1.mm.bing.net/th?q=Kumpulan Pns Cantik Berhijab&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/kumpulan-pns-cantik-berhijab.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Kumpulan Pns Cantik Berhijab</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/foto-pns-cantik-indonesia.html">
+                <img src="https://tse1.mm.bing.net/th?q=Foto Pns Cantik Indonesia&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/foto-pns-cantik-indonesia.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Foto Pns Cantik Indonesia</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/pns-wanita-menarik.html">
+                <img src="https://tse1.mm.bing.net/th?q=Pns Wanita Menarik&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/pns-wanita-menarik.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Pns Wanita Menarik</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/pegawai-negeri-sipil-cantik.html">
+                <img src="https://tse1.mm.bing.net/th?q=Pegawai Negeri Sipil Cantik&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/pegawai-negeri-sipil-cantik.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Pegawai Negeri Sipil Cantik</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/pns-cantik-indonesia.html">
+                <img src="https://tse1.mm.bing.net/th?q=Pns Cantik Indonesia&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/pns-cantik-indonesia.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Pns Cantik Indonesia</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/wanita-pns-cantik.html">
+                <img src="https://tse1.mm.bing.net/th?q=Wanita Pns Cantik&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/wanita-pns-cantik.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Wanita Pns Cantik</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card post h-100 shadow-sm">
+            <a href="posts/pns-cantik.html">
+                <img src="https://tse1.mm.bing.net/th?q=Pns Cantik&w=400" class="card-img-top" loading="lazy">
+            </a>
+            <div class="card-body">
+                <a href="posts/pns-cantik.html" class="text-dark text-capitalize text-decoration-none">
+                    <h6 class="fw-bold">Pns Cantik</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</div>
 
-  </div>
+<div id="loading" class="text-center my-3" style="display:none;">
+    <small>Loading...</small>
+</div>
+
+<script>
+let posts = ['pesona-wanita-pns-indonesia.html', 'pns-cantik-berseragam.html', 'gaya-pns-wanita-modern.html', 'pns-cantik-di-kantor.html', 'pns-cantik-viral-terbaru.html', 'kumpulan-pns-cantik-berhijab.html', 'foto-pns-cantik-indonesia.html', 'pns-wanita-menarik.html', 'pegawai-negeri-sipil-cantik.html', 'pns-cantik-indonesia.html', 'wanita-pns-cantik.html', 'pns-cantik.html'];   // semua data post
+let perPage = 12;
+let current = 12;
+let loading = false;
+
+window.onscroll = function() {
+    if (loading) return;
+
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+        if (current >= posts.length) return;
+
+        loading = true;
+        document.getElementById("loading").style.display = "block";
+
+        setTimeout(() => {
+            let container = document.getElementById("post-container");
+
+            for (let i = current; i < current + perPage && i < posts.length; i++) {
+                let p = posts[i];
+                let t = p.replace(".html","").replaceAll("-"," ");
+
+                let html = `
+                <div class="col-md-3 mb-4">
+                    <div class="card post h-100 shadow-sm">
+                        <a href="posts/${p}">
+                            <img src="https://tse1.mm.bing.net/th?q=${t}&w=400" class="card-img-top" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <a href="posts/${p}" class="text-dark text-decoration-none">
+                                <h6 class="fw-bold">${t}</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                `;
+
+                container.insertAdjacentHTML("beforeend", html);
+            }
+
+            current += perPage;
+            loading = false;
+            document.getElementById("loading").style.display = "none";
+        }, 500);
+    }
+};
+</script>
+
+<!-- adnativ -->
+<script type='text/javascript' src='https://adsterrah.github.io/banner/nativ.js'></script>
 
 </div>
 
-<!-- AD -->
-<div class="ad-box my-3 text-center">
-  {% include adtop.html %}
-</div>
+<footer class="bg-dark text-white text-center p-3 mt-4 border-top">
+    Supported by <a class='text-danger fw-bold text-decoration-none' href='https://aridjaya.com/'>Aridjaya</a>
+</footer>
 
-<!-- PAGINATION -->
-<div class="container my-5">
-  {% if paginator.total_pages > 1 %}
-  <nav>
-    <ul class="pagination justify-content-center">
-
-      <!-- PREV -->
-      {% if paginator.previous_page %}
-      <li class="page-item">
-        <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a>
-      </li>
-      {% endif %}
-
-      {% assign total = paginator.total_pages %}
-      {% assign current = paginator.page %}
-      {% assign delta = 1 %}
-
-      {% assign start = current | minus: delta %}
-      {% assign end = current | plus: delta %}
-
-      {% if start < 1 %}{% assign start = 1 %}{% endif %}
-      {% if end > total %}{% assign end = total %}{% endif %}
-
-      <!-- FIRST -->
-      {% if start > 1 %}
-      <li class="page-item">
-        <a class="page-link" href="{{ '/' | relative_url }}">1</a>
-      </li>
-
-      {% if start > 2 %}
-      <li class="page-item disabled"><span class="page-link">...</span></li>
-      {% endif %}
-      {% endif %}
-
-      <!-- RANGE -->
-      {% for page in (start..end) %}
-      <li class="page-item {% if page == current %}active{% endif %}">
-
-        {% if page == 1 %}
-        <a class="page-link" href="{{ '/' | relative_url }}">
-          {{ page }}
-        </a>
-        {% else %}
-        <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
-          {{ page }}
-        </a>
-        {% endif %}
-
-      </li>
-      {% endfor %}
-
-      <!-- LAST -->
-      {% if end < total %}
-      {% if end < total | minus: 1 %}
-      <li class="page-item disabled"><span class="page-link">...</span></li>
-      {% endif %}
-
-      <li class="page-item">
-        <a class="page-link" href="{{ site.paginate_path | replace: ':num', total | relative_url }}">
-          {{ total }}
-        </a>
-      </li>
-      {% endif %}
-
-      <!-- NEXT -->
-      {% if paginator.next_page %}
-      <li class="page-item">
-        <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">&raquo;</a>
-      </li>
-      {% endif %}
-
-    </ul>
-  </nav>
-  {% endif %}
-</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type='text/javascript' src='https://adsterrah.github.io/banner/socialbar.js'></script>
+<script type='text/javascript'>
+// Set the overflow property on the body element to prevent scrolling
+document.body.style.overflow = "hidden";
+// Use a timer to enable scrolling after 5 seconds
+setTimeout(function () {
+    document.body.style.overflow = "auto";
+}, 3000); // 3000 milliseconds = 3 seconds
+</script>
+</body>
+</html>
