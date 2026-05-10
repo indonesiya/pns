@@ -57,6 +57,13 @@ img {
   height: auto;
 }
 
+/* Bootstrap custom sticky top 80px */
+.sticky-top-80 {
+  position: sticky;
+  top: 80px!important;
+  z-index: 1020; /* sama seperti .sticky-top Bootstrap */
+}
+
 /* SCROLL BUTTON */
 .scroll-top {
   position: fixed;

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 title: Sitemap
 permalink: /sitemap/
+comments: false
 ---
 
 <section class="container py-5">

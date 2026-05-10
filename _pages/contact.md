@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 title: Kontak
 permalink: /contact/
+comments: false
 ---
 
 <section class="container py-5">

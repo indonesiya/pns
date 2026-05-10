@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 title: Kebijakan Privasi
 permalink: /privacy/
+comments: false
 ---
 
 <section class="container py-5">

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About Me
-permalink: /about
+title: Tentang Kami
+permalink: /about/
 comments: false
 ---
 

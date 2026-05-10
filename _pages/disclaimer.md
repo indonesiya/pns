@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page
 title: Disclaimer
 permalink: /disclaimer/
+comments: false
 ---
 
 <section class="container py-5">
