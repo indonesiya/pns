@@ -88,8 +88,23 @@
       - <a href="{{site.copyright.link}}"
         class="fw-bold text-dark link-danger text-decoration-none">{{ site.title }}</a></small>
   </div>
+
   <!-- SCROLL TOP -->
   <a href="#">
     <button id="scrollTopBtn" class="scroll-top" style="display: block; "> ↑ </button>
   </a>
+
+  <!-- Floating Bottom Ad -->
+  <div id="floatingBottomAd"
+    class="position-fixed bottom-0 start-50 translate-middle-x bg-white shadow border rounded-top"
+    style="z-index:1080; width:100%; max-width:728px;">
+    <!-- Close Button -->
+    <button type="button" class="btn-close position-absolute top-0 end-0 m-2" aria-label="Close"
+      onclick="document.getElementById('floatingBottomAd').style.display='none';">
+    </button>
+    <!-- Ad Container -->
+    <div class="text-center overflow-hidden pt-4 px-1 pb-1">
+      {% include adfloat.html %}
+    </div>
+  </div>
 </footer>
