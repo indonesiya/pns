@@ -175,6 +175,7 @@ def build_header(title):
 <link href="{BASE_URL}/style.css" rel="stylesheet">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3956807637449855"
      crossorigin="anonymous"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js'></script>
 <script type='text/javascript' src='https://indonesiya.com/banner/socialbar.js'></script>     
 </head>
 
@@ -214,12 +215,16 @@ def build_footer():
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script type='text/javascript' src='https://indonesiya.com/banner/popunder.js'></script>
 <script type='text/javascript'>
-// Set the overflow property on the body element to prevent scrolling
+/** Set the overflow property on the body element to prevent scrolling */
 document.body.style.overflow = "hidden";
-// Use a timer to enable scrolling after 4 seconds
+/** Use a timer to enable scrolling after 4 seconds */
 setTimeout(function () {
     document.body.style.overflow = "auto";
 }, 4000); // 4000 milliseconds = 4 seconds
+/** Blank Target External Links */
+$(document.links).filter(function () {
+    return this.hostname != window.location.hostname;
+}).attr('target', '_blank');
 </script>
 </body>
 </html>
