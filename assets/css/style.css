@@ -1,20 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Ubah font default Bootstrap menjadi Roboto */
-body,
-.navbar,
-.dropdown-menu,
-.btn,
-.form-control,
-.card,
-.modal,
-.tooltip,
-.popover {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
-}
 
 body {
   overflow-x: hidden;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.article-post {
+  font-family: Merriweather;
+  font-size: 1.1rem;
+  line-height: 1.84;
+  color: rgba(0, 0, 0, .8);
 }
 
 /* brand biar gak kegedean */

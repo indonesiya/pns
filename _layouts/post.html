@@ -22,9 +22,8 @@ layout: default
         </span>
 
         {% if page.author %}
-        <span>•</span>
-        <span class="text-capitalize text-muted link-success" itemprop="author">
-          {{ page.author }}
+        <span class="small text-capitalize text-muted" itemprop="author">
+          • {{ page.author }}
         </span>
         {% endif %}
 
@@ -43,7 +42,7 @@ layout: default
         {% include adtop.html %}
       </div>
 
-      <div class="mb-4 lh-lg">
+      <div class="article-post mb-4 lh-lg">
         {% assign parts = content | split: '</p>' %}
         {% for p in parts %}
         {{ p }}</p>

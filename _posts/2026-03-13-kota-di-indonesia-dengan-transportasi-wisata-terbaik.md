@@ -4,6 +4,7 @@ title: "Kota di Indonesia dengan Transportasi Wisata Terbaik"
 author: dina
 categories: [ wisata, liburan ]
 image: assets/images/wisata/kota-di-indonesia-dengan-transportasi-wisata-terbaik.jpg
+tags: featured
 ---
 
 Indonesia dikenal sebagai negara kepulauan yang memiliki ribuan destinasi wisata menarik. Dari wisata alam, budaya, sejarah, hingga kuliner, semuanya tersebar di berbagai kota di Indonesia. Namun, pengalaman berwisata tidak hanya ditentukan oleh keindahan tempat wisata saja, tetapi juga oleh kemudahan transportasi wisata yang tersedia di kota tersebut. Kota dengan sistem transportasi yang baik akan memudahkan wisatawan untuk berpindah dari satu tempat wisata ke tempat lainnya secara efisien, nyaman, dan terjangkau.
