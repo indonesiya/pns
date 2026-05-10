@@ -12,7 +12,7 @@ layout: default
       <div class="d-flex align-items-center gap-2 mb-3">
 
         {% if page.categories and page.categories.size > 0 %}
-        <span class="small text-danger text-uppercase fw-semibold">
+        <span class="small text-danger text-capitalize fw-bold">
           {{ page.categories[0] }}
         </span>
         {% endif %}
@@ -172,7 +172,7 @@ layout: default
               style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             {% endif %}
 
-            <span class="fw-semibold text-dark link-danger">
+            <span class="fw-bold text-dark link-danger">
               {{ post.title }}
             </span>
 
@@ -204,7 +204,7 @@ layout: default
               style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             {% endif %}
 
-            <span class="fw-semibold">
+            <span class="fw-bold text-dark link-danger">
               {{ post.title }}
             </span>
 
