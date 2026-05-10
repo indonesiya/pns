@@ -27,7 +27,7 @@
     {% if match %}
 
     <li class="mb-2">
-      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-primary link-danger fw-semibold d-block">
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-primary link-danger d-block">
         {{ post.title }}
       </a>
     </li>
@@ -52,7 +52,7 @@
     {% unless shown_urls contains post.url %}
 
     <li class="mb-2">
-      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-primary link-danger fw-semibold d-block">
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-primary link-danger d-block">
         {{ post.title }}
       </a>
     </li>
