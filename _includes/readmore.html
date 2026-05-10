@@ -1,0 +1,74 @@
+<div class="bg-light mt-4 p-3 border rounded">
+
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> BACA JUGA <span class="text-danger">/</span>
+  </h6>
+
+  {% assign related_posts = site.posts | where_exp: "post", "post.url != page.url" %}
+  {% assign shown_urls = "" | split: "" %}
+  {% assign count = 0 %}
+
+  <ul class="mb-0 lh-base">
+
+    <!-- PRIORITAS TAG -->
+    {% if page.tags %}
+    {% for post in related_posts %}
+
+    {% assign match = false %}
+
+    {% for tag in post.tags %}
+    {% if page.tags contains tag %}
+    {% assign match = true %}
+    {% break %}
+    {% endif %}
+    {% endfor %}
+
+    {% unless shown_urls contains post.url %}
+    {% if match %}
+
+    <li class="mb-2">
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-primary fw-semibold d-block">
+        {{ post.title }}
+      </a>
+    </li>
+
+    {% assign shown_urls = shown_urls | push: post.url %}
+    {% assign count = count | plus: 1 %}
+
+    {% if count == 5 %}
+    {% break %}
+    {% endif %}
+
+    {% endif %}
+    {% endunless %}
+
+    {% endfor %}
+    {% endif %}
+
+    <!-- FALLBACK -->
+    {% if count < 5 %}
+    {% for post in related_posts %}
+
+    {% unless shown_urls contains post.url %}
+
+    <li class="mb-2">
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none d-block text-primary">
+        {{ post.title }}
+      </a>
+    </li>
+
+    {% assign shown_urls = shown_urls | push: post.url %}
+    {% assign count = count | plus: 1 %}
+
+    {% if count == 5 %}
+    {% break %}
+    {% endif %}
+
+    {% endunless %}
+
+    {% endfor %}
+    {% endif %}
+
+  </ul>
+
+</div>

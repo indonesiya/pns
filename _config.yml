@@ -1,0 +1,35 @@
+# Site settings
+title: INDONESIYA
+email: indonesiya.com
+description: >
+  Berbagi informasi, menginspirasi dan terpopuler
+  
+url: "https://indonesiya.com"
+baseurl: "/asn"
+
+analytics: G-4D4D0Y40BV
+timezone: Asia/Jakarta
+
+future: false
+logo: logo.png
+default-image: default.jpg
+
+built-by: INDONESIYA
+
+copyright:
+  name: INDONESIYA
+  link: "https://indonesiya.com"
+
+markdown: kramdown
+permalink: /:title/
+
+paginate: 12
+paginate_path: /page:num/
+
+include:
+  - _pages
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
