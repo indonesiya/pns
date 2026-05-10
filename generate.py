@@ -187,11 +187,11 @@ def build_header(title):
     </button>
     <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav me-auto">
-            <li class="nav-item"><a class="nav-link" href="{BASE_URL}/galeri.html">Galeri</a></li>
-            <li class="nav-item"><a class="nav-link" href="{BASE_URL}/inspirasi.html">Inspirasi</a></li>
-            <li class="nav-item"><a class="nav-link" href="{BASE_URL}/karir.html">Karir</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://aridjaya.com" target='_blank'>Partner</a></li>
-            <li class="nav-item"><a class="nav-link" href="{BASE_URL}/kontak.html">Kontak</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold text-dark link-primary" href="{BASE_URL}/galeri.html">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold text-dark link-primary" href="{BASE_URL}/inspirasi.html">Inspirasi</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold text-dark link-primary" href="{BASE_URL}/karir.html">Karir</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold text-dark link-primary" href="https://aridjaya.com" target='_blank'>Partner</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold text-dark link-primary" href="{BASE_URL}/kontak.html">Kontak</a></li>
         </ul>
         <form class="d-flex">
             <input class="form-control me-2" placeholder="Search...">
@@ -252,7 +252,7 @@ for kw in selected:
                 </p>
                 <!-- ad2 -->
                 <div class="text-center p-3 mb-3">
-                    <script type='text/javascript' src='https://indonesiya.com/banner/ad2.js'></script>
+                    <script type='text/javascript' src='https://indonesiya.com/banner/ad1.js'></script>
                 </div>
                 <section>
                     {long_content()}
@@ -263,7 +263,7 @@ for kw in selected:
                 </section>
                 <!-- ad3 -->
                 <div class="text-center p-3 my-3">
-                    <script type='text/javascript' src='https://indonesiya.com/banner/ad3.js'></script>
+                    <script type='text/javascript' src='https://indonesiya.com/banner/ad1.js'></script>
                 </div>
                 <!-- RELATED -->
                 <section>
@@ -293,14 +293,14 @@ for kw in selected:
                         <span class="text-danger">/</span> KATEGORI <span class="text-danger">/</span>
                     </h6>
                     <ul class="list-unstyled">
-                        <li><a href="{BASE_URL}/pns-cantik">PNS Cantik</a></li>
-                        <li><a href="{BASE_URL}/pns-berhijab">PNS Berhijab</a></li>
-                        <li><a href="{BASE_URL}/gaya-kerja">Gaya Kerja</a></li>
-                        <li><a href="{BASE_URL}/outfit-kantor">Outfit Kantor</a></li>
-                        <li><a href="{BASE_URL}/wanita-karir">Wanita Karir</a></li>
-                        <li><a href="{BASE_URL}/inspirasi">Inspirasi</a></li>
-                        <li><a href="{BASE_URL}/kehidupan-pns">Kehidupan PNS</a></li>
-                        <li><a href="{BASE_URL}/tips-cantik">Tips Cantik</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/pns-cantik">PNS Cantik</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/pns-berhijab">PNS Berhijab</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/gaya-kerja">Gaya Kerja</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/outfit-kantor">Outfit Kantor</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/wanita-karir">Wanita Karir</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/inspirasi">Inspirasi</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/kehidupan-pns">Kehidupan PNS</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/tips-cantik">Tips Cantik</a></li>
                     </ul>
                 </div>
             </div>
@@ -311,11 +311,11 @@ for kw in selected:
                         <span class="text-danger">/</span> POPULER <span class="text-danger">/</span>
                     </h6>
                     <ul class="list-unstyled">
-                        <li><a href="{BASE_URL}/pns-cantik-indonesia">PNS Cantik Indonesia</a></li>
-                        <li><a href="{BASE_URL}/pns-cantik-berhijab">PNS Cantik Berhijab</a></li>
-                        <li><a href="{BASE_URL}/gaya-pns-modern">Gaya PNS Modern</a></li>
-                        <li><a href="{BASE_URL}/outfit-kantor-elegan">Outfit Kantor Elegan</a></li>
-                        <li><a href="{BASE_URL}/wanita-karir-inspiratif">Wanita Karir Inspiratif</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/pns-cantik-indonesia">PNS Cantik Indonesia</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/pns-cantik-berhijab">PNS Cantik Berhijab</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/gaya-pns-modern">Gaya PNS Modern</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/outfit-kantor-elegan">Outfit Kantor Elegan</a></li>
+                        <li><a class="text-primary link-danger" href="{BASE_URL}/wanita-karir-inspiratif">Wanita Karir Inspiratif</a></li>
                     </ul>
                 </div>
             </div>
@@ -339,7 +339,7 @@ for kw in selected:
                     </h6>
                     <p>Dapatkan inspirasi PNS cantik dan wanita karir setiap hari.</p>
                     <input type="email" class="form-control mb-2" placeholder="Masukkan email">
-                    <a href="https://aridjaya.com" target="_blank" rel="noopener">
+                    <a href="https://indonesiya.com" target="_blank" rel="noopener">
                         <button class="btn btn-success btn-sm w-100">Daftar</button>
                     </a>
                 </div>
