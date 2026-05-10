@@ -46,7 +46,7 @@ layout: default
 
             <!-- CATEGORY -->
             {% if featured_post.categories %}
-            <div class="small text-danger fw-semibold mb-1">
+            <div class="small text-danger text-uppercase fw-semibold mb-1">
               {{ featured_post.categories | first }}
             </div>
             {% endif %}
@@ -85,7 +85,7 @@ layout: default
         <div class="flex-grow-1">
 
           <!-- CATEGORY -->
-          <div class="small text-danger fw-semibold">
+          <div class="small text-danger text-uppercase fw-semibold">
             {{ post.categories | first }}
           </div>
 
@@ -110,7 +110,7 @@ layout: default
   <div class="my-5">
 
     <h6 class="fw-bold text-uppercase mb-3">
-      <span class="text-danger">/</span> ARTIKEL TERBARU <span class="text-danger">/</span>
+      <span class="text-danger">/</span> ARTIKEL <span class="text-danger">/</span>
     </h6>
 
     {% assign now = site.time | date: "%s" %}
@@ -125,7 +125,7 @@ layout: default
       {% if post.publish_at == nil or publish_time <= now %}
       {% assign has_post = true %}
 
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-4 my-4">
         <div class="card border-0 h-100">
 
           <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
@@ -141,13 +141,13 @@ layout: default
 
               <!-- CATEGORY -->
               {% if post.categories %}
-              <div class="small text-danger fw-semibold mb-1">
+              <div class="small text-uppercase text-danger fw-semibold mb-1">
                 {{ post.categories[0] }}
               </div>
               {% endif %}
 
               <!-- TITLE -->
-              <h4 class="fw-bold text-dark mb-1">
+              <h4 class="fw-bold text-dark link-primary mb-1">
                 {{ post.title }}
               </h4>
 

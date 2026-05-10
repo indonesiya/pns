@@ -1,4 +1,4 @@
-<nav class="container navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top z-3">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top z-3">
   <div class="container">
 
     <!-- LOGO -->
@@ -11,11 +11,11 @@
     </a>
 
     <!-- TOGGLER -->
-    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navTop"
-      aria-controls="navTop" aria-expanded="false" aria-label="Toggle navigation">
-
+    <button class="navbar-toggler border-0 shadow-none" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navTop"
+      aria-controls="navTop" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-
     </button>
 
     <!-- COLLAPSE -->
@@ -26,97 +26,94 @@
 
         <!-- BERANDA -->
         <li class="nav-item">
-          <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="/">
+          <a class="nav-link text-danger fw-bold {% if page.url == '/' %}active{% endif %}" href="/">
             Beranda
           </a>
         </li>
 
-        <!-- INFORMASI -->
+        <!-- DESTINASI -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Informasi
+          <a class="nav-link text-dark link-danger fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Destinasi
           </a>
-
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/categories/#informasi">Informasi</a></li>
-            <li><a class="dropdown-item" href="/categories/#berita">Berita</a></li>
-            <li><a class="dropdown-item" href="/categories/#pemerintahan">Pemerintahan</a></li>
-            <li><a class="dropdown-item" href="/categories/#kebijakan">Kebijakan</a></li>
-            <li><a class="dropdown-item" href="/categories/#kepegawaian">Kepegawaian</a></li>
-            <li><a class="dropdown-item" href="/categories/#publik">Publik</a></li>
+          <ul class="dropdown-menu border-0 rounded shadow-sm p-1">
+            <li><a class="dropdown-item link-danger rounded p-1" href="/categories/#wisata">Wisata</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#pantai">Pantai</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#gunung">Gunung</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#air-terjun">Air Terjun</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#danau">Danau</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#pulau">Pulau</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#goa">Goa</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#taman">Taman</a></li>
           </ul>
         </li>
 
-        <!-- ASN -->
+        <!-- DAERAH -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            ASN
+          <a class="nav-link text-dark link-danger fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Daerah
           </a>
-
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/categories/#asn">ASN</a></li>
-            <li><a class="dropdown-item" href="/categories/#pns">PNS</a></li>
-            <li><a class="dropdown-item" href="/categories/#pppk">PPPK</a></li>
-            <li><a class="dropdown-item" href="/categories/#manajemen">Manajemen</a></li>
-            <li><a class="dropdown-item" href="/categories/#jabatan">Jabatan</a></li>
-            <li><a class="dropdown-item" href="/categories/#struktur">Struktur</a></li>
-            <li><a class="dropdown-item" href="/categories/#golongan">Golongan</a></li>
-            <li><a class="dropdown-item" href="/categories/#tugas">Tugas</a></li>
-            <li><a class="dropdown-item" href="/categories/#peran">Peran</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#jawa">Jawa</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#bali">Bali</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#sumatera">Sumatera</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#kalimantan">Kalimantan</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#sulawesi">Sulawesi</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#nusa-tenggara">Nusa Tenggara</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#maluku">Maluku</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#papua">Papua</a></li>
           </ul>
         </li>
 
-        <!-- SELEKSI -->
+        <!-- AKTIVITAS -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Seleksi
+          <a class="nav-link text-dark link-danger fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Aktivitas
           </a>
-
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/categories/#seleksi">Seleksi</a></li>
-            <li><a class="dropdown-item" href="/categories/#cpns">CPNS</a></li>
-            <li><a class="dropdown-item" href="/categories/#formasi">Formasi</a></li>
-            <li><a class="dropdown-item" href="/categories/#pppk">PPPK</a></li>
-            <li><a class="dropdown-item" href="/categories/#masa-depan">Masa Depan</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#snorkeling">Snorkeling</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#diving">Diving</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#hiking">Hiking</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#camping">Camping</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#kuliner">Kuliner</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#fotografi">Fotografi</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#family-trip">Family Trip</a></li>
           </ul>
         </li>
 
-        <!-- KARIER -->
+        <!-- TIPS PERJALANAN -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Karier
+          <a class="nav-link text-dark link-danger fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Tips
           </a>
-
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/categories/#karier">Karier</a></li>
-            <li><a class="dropdown-item" href="/categories/#promosi">Promosi</a></li>
-            <li><a class="dropdown-item" href="/categories/#pengembangan">Pengembangan</a></li>
-            <li><a class="dropdown-item" href="/categories/#kinerja">Kinerja</a></li>
-            <li><a class="dropdown-item" href="/categories/#gaji">Gaji</a></li>
-            <li><a class="dropdown-item" href="/categories/#tunjangan">Tunjangan</a></li>
-            <li><a class="dropdown-item" href="/categories/#pensiun">Pensiun</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#tips">Tips Wisata</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#itinerary">Itinerary</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#transportasi">Transportasi</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#penginapan">Penginapan</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#budget-travel">Budget Travel</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#packing">Packing</a></li>
           </ul>
         </li>
 
-        <!-- REGULASI -->
+        <!-- INTERNASIONAL -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            Regulasi
+          <a class="nav-link text-dark link-danger fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Dunia
           </a>
-
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/categories/#regulasi">Regulasi</a></li>
-            <li><a class="dropdown-item" href="/categories/#undang-undang">Undang Undang</a></li>
-            <li><a class="dropdown-item" href="/categories/#peraturan">Peraturan</a></li>
-            <li><a class="dropdown-item" href="/categories/#disiplin">Disiplin</a></li>
-            <li><a class="dropdown-item" href="/categories/#kode-etik">Kode Etik</a></li>
-            <li><a class="dropdown-item" href="/categories/#reformasi">Reformasi</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#asia">Asia</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#eropa">Eropa</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#amerika">Amerika</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#timur-tengah">Timur Tengah</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#afrika">Afrika</a></li>
+            <li><a class="dropdown-item link-danger" href="/categories/#australia">Australia</a></li>
           </ul>
         </li>
 
         <!-- TENTANG -->
         <li class="nav-item">
-          <a class="nav-link" href="/about">
+          <a class="nav-link text-dark link-danger fw-semibold " href="/about">
             Tentang
           </a>
         </li>
@@ -126,12 +123,14 @@
       <!-- SEARCH -->
       <div class="search-container ms-lg-3 mt-3 mt-lg-0">
         <form action="/search/" method="get" class="d-flex">
-          <input type="text" name="q" class="form-control search-input" placeholder="Cari informasi ASN...">
+          <input type="text"
+            name="q"
+            class="form-control search-input"
+            placeholder="Cari destinasi wisata...">
         </form>
       </div>
 
     </div>
-
   </div>
 </nav>
 
@@ -139,34 +138,34 @@
 <div class="bg-danger text-white py-2">
   <div class="container d-flex flex-nowrap overflow-auto gap-3 small fw-semibold no-scrollbar align-items-center">
 
-    <a href="/tags/pengumuman" class="text-white text-decoration-none">
-      Pengumuman
+    <a href="/tags/trending" class="text-white link-warning text-decoration-none">
+      Trending
     </a>
 
-    <a href="/tags/terbaru" class="text-white text-decoration-none">
-      Terbaru
+    <a href="/tags/populer" class="text-white link-warning text-decoration-none">
+      Populer
     </a>
 
-    <a href="/tags/penting" class="text-white text-decoration-none">
-      Penting
+    <a href="/tags/rekomendasi" class="text-white link-warning text-decoration-none">
+      Rekomendasi
     </a>
 
     <span class="text-white-50">|</span>
 
-    <a href="/categories/#kebijakan" class="text-white text-decoration-none">
-      Kebijakan
+    <a href="/categories/#pantai" class="text-white link-warning text-decoration-none">
+      Pantai
     </a>
 
-    <a href="/categories/#formasi" class="text-white text-decoration-none">
-      CPNS & PPPK
+    <a href="/categories/#gunung" class="text-white link-warning text-decoration-none">
+      Gunung
     </a>
 
-    <a href="/categories/#soal" class="text-white text-decoration-none">
-      Soal
+    <a href="/categories/#kuliner" class="text-white link-warning text-decoration-none">
+      Kuliner
     </a>
 
-    <a href="/categories/#tips" class="text-white text-decoration-none">
-      Tips
+    <a href="/categories/#budget-travel" class="text-white link-warning text-decoration-none">
+      Budget Travel
     </a>
 
   </div>
